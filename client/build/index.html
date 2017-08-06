@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PokeDoke</title>
+  <script src="bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+  <button id="up-button"></button>
+  <button id="down-button"></button>
+  <button id="right-button"></button>
+  <button id="left-button"></button>
+  <button id="a-button"></button>
+  <audio autoplay>
+    <source src="/audio/openingMusic.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="console">
+
+      <div id= "welcomeScreen" class="shadow">
+        <!-- <img src="./img/Pokeball.png" id='pokeball'> -->
+        <!-- <h1>Welcome to pokemon</h1> -->
+        <img src="./img/logo.png" id='logo'>
+        <p id="nameQuestion">What's your name?</p>
+        <input type="text" id="name_to_add" name="fname" autofocus>
+        <input type="submit" id="submit_name">
+        <img src="./img/ashBig.png" id='ashWelcome'>
+        <img src="./img/growlithe.png" id='blastoiseWelcome'>
+        <pre id='writeBy'>Created by Dave, Rory, Peter and Julia</pre>
+      </div>
+
+      <div id='choose_screen' class="shadow"></div>
+      
+      <canvas id='map' width='580' height='460' class="shadow"></canvas>
+
+      <div id='fight_screen'></div>
+
+      <div id='home_screen' class="shadow"></div>
+
+      <div id='craig_screen' class="shadow"></div>
+
+      <div id='simon_screen' class="shadow"></div>
+
+      <div id='zsolt_screen' class="shadow"></div>
+
+      <div id='win_screen' class="shadow">
+        <h2 id='winSpeech'>You have them all. Go away!</h2>
+      </div>
+
+    </div>
+  </body>
+  </html>

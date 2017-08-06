@@ -1,0 +1,532 @@
+@font-face {
+  font-family: "pokemon";
+  src: url("pokemon_gb.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "pokemon", serif;
+  width: 100%;
+  background-image: url("/img/gameboy.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% 100%;
+}
+
+p{
+  margin: auto;
+  padding: 10px;
+}
+
+.selection {
+  margin-left: 15px;
+}
+
+#nameQuestion{
+  width: 50%;
+}
+
+#welcomeQuote{
+  display:block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+#logo{
+  display: block;
+  height: 25%;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+#name_to_add{
+  display: block;
+  margin: auto;
+}
+
+#submit_name{
+ display: block;
+ margin:auto;
+}
+
+#blastoiseWelcome{
+  height: 44%;
+  width: 33%;
+  position: absolute;
+  bottom: 30px;
+  left: 310px;
+}
+
+#writeBy{
+  bottom: 5px;
+  left:140px;
+  position: absolute;
+  font-family: "pokemon", serif;
+  font-size: 8px;
+}
+
+#pokeball{
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#up-button{
+  position: absolute;
+  top: 238px;
+  left: 138px;
+  width: 63px;
+  height: 63px;
+  border: none !important;
+  background-color: transparent;
+}
+
+#ashWelcome{
+  height: 44%;
+  width: 33%;
+  position: absolute;
+  bottom: 45px;
+  left: 90px;
+}
+
+#down-button{
+  position: absolute;
+  top: 363px;
+  left: 138px;
+  width: 63px;
+  height: 63px;
+  border: none !important;
+  background-color: transparent;
+}
+
+#right-button{
+  position: absolute;
+  top: 300px;
+  left: 198px;
+  width: 63px;
+  height: 63px;
+  border: none !important;
+  background-color: transparent;
+}
+
+#left-button{
+  position: absolute;
+  top: 300px;
+  left: 75px;
+  width: 63px;
+  height: 63px;
+  border: none !important;
+  background-color: transparent;
+}
+
+#a-button{
+  position: absolute;
+  top: 270px;
+  right: 75px;
+  width: 100px;
+  height: 100px;
+  border: none !important;
+  background-color: transparent;
+}
+
+#console {
+  position: absolute;
+  bottom: 200px;
+  right: 355px;
+  width: 580px;
+  height: 460px;
+}
+
+.shadow {
+  box-shadow:
+  inset 0 0 15px #000,
+  inset 0 0 15px #000,
+  inset 0 0 15px #000;
+}
+
+#welcomeScreen {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 580px;
+  height: 460px;
+  background: url('img/pavement.png');
+}
+
+#win_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background: url('img/pavement.png');
+}
+
+#choose_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background-color: white;
+  background: url('img/pavement.png');
+}
+
+#fight_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background-image: url("/img/pavement.png");
+}
+
+#fight_textbox {
+  width: 580px;
+  height: 180px;
+  position: absolute; 
+  bottom: 0;
+}
+
+#playerPokemon {
+  position:absolute; 
+  height:230px; 
+  width:230px; 
+  bottom:120px; 
+  left:30px;
+}
+
+#player_name{
+  position: absolute;
+  display:none;
+}
+
+#player_pok_name{
+  position: absolute;
+  left: 13px;
+  top: 78px;
+  font-size: 20px;
+}
+
+#player_pok_hp{
+  position: absolute;
+  left: 20px;
+  top: 110px;
+}
+
+#opponantPokemon{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: 31px;
+  top: 68px; 
+}
+
+#opponant_pok_name{
+  position: absolute;
+  left: 352px;
+  top: 45px;
+  font-size: 20px;
+}
+
+#move_text {
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+  width: 450px;
+}
+
+#opponant_pok_hp{
+  position: absolute;
+  left:352px;
+  top: 73px;
+}
+
+#home_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background-color: white;
+  background: url('img/pavement.png');
+}
+
+#craig_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background-image: url("/img/pavement.png");
+}
+
+#simon_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background-image: url("/img/pavement.png");
+}
+
+#zsolt_screen {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 580px;
+  height: 460px;
+  background-image: url("/img/pavement.png");
+}
+
+#mattOak{
+  height: 44%;
+  width: 33%;
+  display: block;
+  margin:auto;
+}
+
+@keyframes example {
+    0% {transform:rotate(15deg);}
+    50%{transform:rotate(-15deg);}
+    100% {transform:rotate(15deg);}
+}
+
+#win_matthew{
+  height: 60%;
+  width: 33%;
+  display: block;
+  margin:auto;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#map {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: orange;
+}
+
+.minipic_on_hand {
+  display: inline-block;
+  margin: 0px 3px 10px 0px;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: lightgray;
+}
+
+.minipic_fainted {
+  display: inline-block;
+  margin: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  filter: grayscale(100%);
+  background-color: gray;
+}
+
+.player_div {
+  display: block;
+  position: absolute;
+  width: 290px;
+  height: 49px;
+  top: 31px;
+  left: 0;
+  /*background-image: url("/img/villainbar.png");*/
+  background-size: 100% 100%;
+  /*border-right: solid black;
+  border-top: solid black;*/
+}
+
+/*#villain_bar {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  top: 10px;
+  left: 300px;
+  background-image: url("/img/herobar.png");
+}
+
+#hero_bar {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  top: 40px;
+  left: 10px;
+  background-image: url("/img/villainbar.png");
+}*/
+
+.opponant_div {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 49px;
+  top: 0;
+  left: 345px;
+  /*background-image: url("/img/herobar.png");*/
+  background-size:100% 100%;
+  /*border-left: solid black;
+  border-bottom: solid black;*/
+}
+
+#bulbasaur{
+ width: 180px;
+ height: 180px;
+ position: relative;
+ left: 10px;
+ border: solid white;
+ background: url('/img/grass_logo.jpg');
+ background-size: 30%;
+ background-repeat: no-repeat;
+ background-color: rgba(0, 128, 0, 0.28);
+ border-top: 3px solid #CCCCCC;
+ border-right: 3px solid #333333;
+ border-bottom: 3px solid #333333;
+ border-left: 3px solid #CCCCCC;
+}
+
+#bulbasaur:hover{
+ width: 180px;
+ height: 180px;
+ position: relative;
+ left: 10px;
+ border: solid white;
+ background: url('/img/grass_logo.jpg');
+ background-size: 30%;
+ background-repeat: no-repeat;
+ background-color: rgba(0, 128, 0, 0.68);
+ border-top: 3px solid #CCCCCC;
+ border-right: 3px solid #333333;
+ border-bottom: 3px solid #333333;
+ border-left: 3px solid #CCCCCC;
+}
+
+#charmander{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  left: 10px;
+  border: solid white;
+  background-image: url('img/fire_logo.jpg');
+  background-size: 30%;
+  background-color: rgba(255, 165, 0, 0.51);
+  background-repeat: no-repeat;
+  border-top: 3px solid #CCCCCC;
+  border-right: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-left: 3px solid #CCCCCC;
+}
+
+#charmander:hover{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  left: 10px;
+  border: solid white;
+  background-image: url('img/fire_logo.jpg');
+  background-size: 30%;
+  background-color: rgba(255, 165, 0, 0.91);
+  background-repeat: no-repeat;
+  border-top: 3px solid #CCCCCC;
+  border-right: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-left: 3px solid #CCCCCC;
+}
+
+#squirtle{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  left: 10px;
+  border: solid white;
+  background: url('img/water_logo.png');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-color: rgba(173, 216, 230, 0.71);
+  border-top: 3px solid #CCCCCC;
+  border-right: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-left: 3px solid #CCCCCC;
+}
+
+#squirtle:hover{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  left: 10px;
+  border: solid white;
+  background: url('img/water_logo.png');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-color: dodgerblue;
+  border-top: 3px solid #CCCCCC;
+  border-right: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-left: 3px solid #CCCCCC;
+}
+
+#craigSpeech{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#simonSpeech{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#zsoltSpeech{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#winSpeech{
+  margin-left: 22px;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#brockCraig{
+  height: 44%;
+  width: 33%;
+  position: absolute;
+  left:180px;
+}
+
+#zsoltachu{
+  height: 56%;
+  width: 39%;
+  position: absolute;
+  left:90px;
+}
+
+#gymBadge{
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  left: 325px;
+  top: 183px;
+}
+
+#simonPic{
+  height: 44%;
+  width: 33%;
+  position: absolute;
+  left:180px;
+}

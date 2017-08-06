@@ -1,0 +1,30 @@
+{
+  "name": "poke-doke",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha ./client/src/models/specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mocha": "^3.2.0",
+    "mongodb": "^2.2.24",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveJS133/Poke-Doke.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daveJS133/Poke-Doke/issues"
+  },
+  "homepage": "https://github.com/daveJS133/Poke-Doke#readme",
+  "description": ""
+}
