@@ -13,11 +13,10 @@
     "express": "^4.14.1",
     "mocha": "^3.2.0",
     "mongodb": "^2.2.24",
-    "webpack": "^2.2.1"
-  },
-  "devDependencies": {
+    "webpack": "^2.2.1",
     "nodemon": "^1.11.0"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daveJS133/Poke-Doke.git"
